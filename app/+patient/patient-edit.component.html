@@ -1,0 +1,41 @@
+<!-- Things like #firstName="ngForm" will change to #firstName="ngModel" after RC2 -->
+<div>
+    <form (ngSubmit)="onSubmit()" #customerForm="ngForm" class="editForm">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="firstName" [(ngModel)]="patient.firstName" #firstName="ngModel" required>
+            <div class="alert alert-danger" [hidden]="firstName.valid">First Name is required</div>
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="lastName" [(ngModel)]="patient.lastName" #lastName="ngModel" required>
+            <div class="alert alert-danger" [hidden]="lastName.valid">Last Name is required</div>
+        </div>
+        <div class="form-group">
+            <label>Address Line1</label>
+            <input type="text" class="form-control" name="addressLine1" [(ngModel)]="patient.addressLine1" #addressLine1="ngModel" required>
+            <div class="alert alert-danger" [hidden]="addressLine1.valid">Address Line1 is required</div>
+        </div>
+        <div class="form-group">
+            <label>Address Line2</label>
+            <input type="text" class="form-control" name="addressLine2" [(ngModel)]="patient.addressLine2" #addressLine2="ngModel">
+            <div class="alert alert-danger" [hidden]="addressLine2.valid">Address Line2 is required</div>
+        </div>
+        <div class="form-group">
+            <label>City</label>
+            <input type="text" class="form-control" name="city" [(ngModel)]="patient.city" #city="ngModel" required>
+            <div class="alert alert-danger" [hidden]="city.valid">City is required</div>
+        </div>
+        <div class="form-group">
+            <label>State</label>
+            <select class="form-control"
+                    [(ngModel)]="patient.state.abbreviation"
+                    name="state"
+                    required>
+                <option *ngFor="let state of states" [ngValue]="state.abbreviation">{{state.name}}</option>
+            </select>
+        </div>
+        <button class="btn btn-default" (click)="onCancel($event)">Cancel</button>&nbsp;&nbsp;
+        <button type="submit" class="btn btn-success" [disabled]="!patientForm.valid">Update</button>
+    </form>
+</div>

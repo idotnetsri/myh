@@ -1,0 +1,20 @@
+/**
+ * Created by NetSri on 04/07/2016.
+ */
+import { RouterConfig } from '@angular/router';
+
+import { PatientComponent }   from './patient.component';
+import { PatientDetailsComponent } from './patient-details.component';
+import { PatientEditComponent } from './patient-edit.component';
+
+export const CustomerRoutes: RouterConfig = [
+    {
+        path: 'patients/:id',
+        component: PatientComponent,
+        children: [
+            { path:'details', component: PatientDetailsComponent },
+            { path:'edit', component: PatientEditComponent }
+        ]
+    }
+];
+

@@ -1,0 +1,57 @@
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    <img src="images/android-icon-48x48.png">MYH.UK
+                </a>
+            </li>
+            <li>
+                <a  href="#" [routerLink]="['/login']" *ngIf="!loggedIn" routerLinkActive="active">Login</a>
+            </li>
+            <li>
+                <a  href="#" [routerLink]="['/dash']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Dashboard</a>
+            </li>
+            <li>
+                <a href="#" [routerLink]="['/patients']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Patients</a>
+            </li>
+            <li>
+                <a href="#" [routerLink]="['/appointments']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Appointments</a>
+            </li>
+            <li>
+                <a href="#" [routerLink]="['/checkinqs']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">CheckIn Qs</a>
+            </li>
+            <li>
+                <a href="#" [routerLink]="['/messages']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Messages</a>
+            </li>
+            <li>
+                <a [routerLink]="['/about']" routerLinkActive="active">About</a>
+            </li>
+            <li>
+                <a href="#" [routerLink]="['/logout']" *ngIf="loggedIn" routerLinkActive="active" href="#"*ngIf="loggedIn">Logout</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <a href="#" (click)="menuToggle($event)" class="btn btn-default" id="menu-toggle">
+        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+    </a>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<!--&lt;!&ndash; Menu Toggle Script &ndash;&gt;-->
+<!--<script>-->
+    <!--$("#menu-toggle").click(function(e) {-->
+        <!--e.preventDefault();-->
+        <!--$("#wrapper").toggleClass("toggled");-->
+    <!--});-->
+<!--</script>-->

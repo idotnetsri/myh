@@ -1,0 +1,38 @@
+<div class="row grid-container">
+        <div class="col-md-12">
+            <div class="table">
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th sort-by="fullName" (sorted)="sort($event)">Full Name</th>
+                        <th sort-by="phones" (sorted)="sort($event)">Phone(s)</th>
+                        <th sort-by="patientCode" (sorted)="sort($event)">Patient Code</th>
+                        <th sort-by="shortAddressLine" (sorted)="sort($event)">Address</th>
+                        <th sort-by="regDate" (sorted)="sort($event)">Reg Date</th>
+                        <!-- Or you can do this directly rather than using sort-by directive -->
+                        <th (click)="sort('visitsThisMonth')">This Month Visit</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let patient of patients;trackBy:trackby.patient">
+                        <td> <img [src]="patient.imageUrl" class="card-image" /></td>
+                        <td><a [routerLink]="['/patients',patient.id,'details']">{{ patient.fullName | capitalize }}</a></td>
+                        <td>{{ patient.phones }}</td>
+                        <td>{{ patient.patientCode }}</td>
+                        <td>{{ patient.shortAddressLine | trim }}</td>
+                        <td>{{ patient.regDate | date:"dd/MM/yy" }}</td>
+                        <td>{{ patient.visitsThisMonth }}</td>
+                        <td><a [routerLink]="['/patients',patient.id,'details']">View Records</a></td>
+                    </tr>
+                    <tr *ngIf="!patients.length">
+                        <td>&nbsp;</td>
+                        <td colspan="6">No Records Found</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
