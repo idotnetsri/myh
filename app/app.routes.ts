@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 
 import { PatientsRoutes } from './patients/patients.routes';
+import { PatientRoutes } from './+patient/patient.routes';
 
 
 const routes: RouterConfig = [
@@ -23,7 +24,8 @@ const routes: RouterConfig = [
         redirectTo: '/about',
         terminal: true
     },
-    ...PatientsRoutes
+    ...PatientsRoutes,
+    ...PatientRoutes
 ];
 
 export const APP_ROUTER_PROVIDERS = [

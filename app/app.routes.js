@@ -6,6 +6,7 @@ var router_1 = require('@angular/router');
 var login_component_1 = require('./login/login.component');
 var about_component_1 = require('./about/about.component');
 var patients_routes_1 = require('./patients/patients.routes');
+var patient_routes_1 = require('./+patient/patient.routes');
 var routes = [
     {
         path: 'login',
@@ -20,7 +21,7 @@ var routes = [
         redirectTo: '/about',
         terminal: true
     }
-].concat(patients_routes_1.PatientsRoutes);
+].concat(patients_routes_1.PatientsRoutes, patient_routes_1.PatientRoutes);
 exports.APP_ROUTER_PROVIDERS = [
     router_1.provideRouter(routes)
 ];

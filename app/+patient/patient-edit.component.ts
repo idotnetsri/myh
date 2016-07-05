@@ -53,7 +53,7 @@ export class PatientEditComponent implements OnInit {
 
     onSubmit() {
         this.dataService.updatePatient(this.patientId,this.patient)
-            .subscribe((status: boolean) => {
+            .subscribe((status: any) => {
                 this.router.navigate(['/patients/'+this.patientId]);
             });
     }

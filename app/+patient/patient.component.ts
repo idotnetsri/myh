@@ -7,7 +7,7 @@ import { Router,  ROUTER_DIRECTIVES } from '@angular/router';
 @Component({
     selector: 'my-app-patient',
     templateUrl: './app/+patient/patient.component.html',
-    styleUrls:['./app/patient/patient.component.css'],
+    styleUrls:['./app/+patient/patient.component.css'],
     directives: [ROUTER_DIRECTIVES]
 })
 export class PatientComponent implements OnInit {
@@ -29,6 +29,9 @@ export class PatientComponent implements OnInit {
             case 'edit':
                 this.displayMode = PatientDisplayModeEnum.Edit;
                 break;
+            case 'new':
+                this.displayMode = PatientDisplayModeEnum.New;
+                break;
         }
     }
 
@@ -36,6 +39,6 @@ export class PatientComponent implements OnInit {
 
 enum PatientDisplayModeEnum {
     Details=0,
-    Orders=1,
+    New=1,
     Edit=2
 }

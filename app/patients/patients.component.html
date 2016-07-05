@@ -11,6 +11,11 @@
         <div class="navbar">
             <ul class="nav navbar-nav">
                 <li class="toolbar-item">
+                    <a (click)="changeDisplayMode(displayModeEnum.New)" [class.active]="displayMode === displayModeEnum.New">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i> New Patient
+                    </a>
+                </li>
+                <li class="toolbar-item">
                     <a (click)="changeDisplayMode(displayModeEnum.Card)" [class.active]="displayMode === displayModeEnum.Card">
                         <span class="glyphicon glyphicon-th-large"></span> Card View
                     </a>
@@ -21,7 +26,7 @@
                     </a>
                 </li>
             </ul>
-            <filter-textbox class="navbar-right"
+            <filter-textbox class="navbar-right" [hidden]="displayMode == displayModeEnum.New"
                             (changed)="filterChanged($event)"></filter-textbox>
         </div>
     </div>
@@ -32,5 +37,5 @@
 <my-app-patients-grid
         [patients]="filteredPatients"
         [hidden]="displayMode !== displayModeEnum.Grid"></my-app-patients-grid>
-
+<my-app-new-patient [hidden]="displayMode !== displayModeEnum.New"></my-app-new-patient>
 

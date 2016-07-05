@@ -17,6 +17,7 @@ var data_service_1 = require('../shared/services/data.service');
 var filter_textbox_component_1 = require('../filter-textbox/filter-textbox.component');
 var patients_card_component_1 = require('./patients-card.component');
 var patients_grid_component_1 = require('./patients-grid.component');
+var patient_new_component_1 = require('../+patient/patient-new.component');
 var PatientsComponent = (function () {
     function PatientsComponent(dataService) {
         this.dataService = dataService;
@@ -65,7 +66,7 @@ var PatientsComponent = (function () {
         core_1.Component({
             selector: 'my-app-patients',
             templateUrl: './app/patients/patients.component.html',
-            directives: [router_1.ROUTER_DIRECTIVES, filter_textbox_component_1.FilterTextboxComponent, patients_card_component_1.PatientsCardComponent, patients_grid_component_1.PatientsGridComponent]
+            directives: [router_1.ROUTER_DIRECTIVES, filter_textbox_component_1.FilterTextboxComponent, patients_card_component_1.PatientsCardComponent, patients_grid_component_1.PatientsGridComponent, patient_new_component_1.NewPatientComponent]
         }), 
         __metadata('design:paramtypes', [data_service_1.DataService])
     ], PatientsComponent);
@@ -76,6 +77,6 @@ var DisplayModeEnum;
 (function (DisplayModeEnum) {
     DisplayModeEnum[DisplayModeEnum["Card"] = 0] = "Card";
     DisplayModeEnum[DisplayModeEnum["Grid"] = 1] = "Grid";
-    DisplayModeEnum[DisplayModeEnum["Map"] = 2] = "Map";
+    DisplayModeEnum[DisplayModeEnum["New"] = 2] = "New";
 })(DisplayModeEnum || (DisplayModeEnum = {}));
 //# sourceMappingURL=patients.component.js.map

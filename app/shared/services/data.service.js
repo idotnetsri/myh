@@ -17,12 +17,8 @@ require('rxjs/add/operator/catch');
 var app_constants_1 = require('../../app.constants');
 var DataService = (function () {
     function DataService(http, _configuration) {
-        var _this = this;
         this.http = http;
         this._configuration = _configuration;
-        this.updatePatient = function (id, itemToUpdate) {
-            return _this.http.put(_this._baseUrl + id, JSON.stringify(itemToUpdate), { headers: _this.headers }).map(function (res) { return res.json(); });
-        };
         this._baseUrl = _configuration.ServerWithApiUrl + 'patient/';
         this.headers = new http_1.Headers();
         this.headers.append('Content-Type', 'application/json');
@@ -61,6 +57,9 @@ var DataService = (function () {
             })
                 .catch(this.handleError);
         }
+    };
+    DataService.prototype.updatePatient = function (id, itemToUpdate) {
+        return this.http.put(this._baseUrl + id, JSON.stringify(itemToUpdate), { headers: this.headers }).map(function (res) { return res.json(); });
     };
     DataService.prototype.findPatientObservable = function (id) {
         return this.createObservable(this.filterPatients(id));

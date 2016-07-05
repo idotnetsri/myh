@@ -57,7 +57,7 @@ export class DataService {
         }
     }
 
-    public updatePatient = (id: number, itemToUpdate: IPatientUpdate): Observable<Response> => {
+    updatePatient(id: number, itemToUpdate: IPatientUpdate): any {
         return this.http.put(this._baseUrl + id, JSON.stringify(itemToUpdate), { headers: this.headers }).map(res => res.json());
     }
 

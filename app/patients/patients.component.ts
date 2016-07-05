@@ -9,11 +9,12 @@ import { IPatientReview } from '../shared/interfaces/IPatientReview';
 import { FilterTextboxComponent } from '../filter-textbox/filter-textbox.component';
 import { PatientsCardComponent } from './patients-card.component';
 import { PatientsGridComponent } from './patients-grid.component'
+import { NewPatientComponent } from '../+patient/patient-new.component';
 
 @Component({
     selector: 'my-app-patients',
     templateUrl: './app/patients/patients.component.html',
-    directives: [ ROUTER_DIRECTIVES, FilterTextboxComponent, PatientsCardComponent, PatientsGridComponent]
+    directives: [ ROUTER_DIRECTIVES, FilterTextboxComponent, PatientsCardComponent, PatientsGridComponent, NewPatientComponent]
 })
 export class PatientsComponent implements OnInit{
     pageTitle:string ='Patients';
@@ -68,5 +69,5 @@ export class PatientsComponent implements OnInit{
 enum DisplayModeEnum {
     Card = 0,
     Grid = 1,
-    Map = 2
+    New = 2
 }

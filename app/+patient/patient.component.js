@@ -30,13 +30,16 @@ var PatientComponent = (function () {
             case 'edit':
                 this.displayMode = PatientDisplayModeEnum.Edit;
                 break;
+            case 'new':
+                this.displayMode = PatientDisplayModeEnum.New;
+                break;
         }
     };
     PatientComponent = __decorate([
         core_1.Component({
             selector: 'my-app-patient',
             templateUrl: './app/+patient/patient.component.html',
-            styleUrls: ['./app/patient/patient.component.css'],
+            styleUrls: ['./app/+patient/patient.component.css'],
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [router_1.Router])
@@ -47,7 +50,7 @@ exports.PatientComponent = PatientComponent;
 var PatientDisplayModeEnum;
 (function (PatientDisplayModeEnum) {
     PatientDisplayModeEnum[PatientDisplayModeEnum["Details"] = 0] = "Details";
-    PatientDisplayModeEnum[PatientDisplayModeEnum["Orders"] = 1] = "Orders";
+    PatientDisplayModeEnum[PatientDisplayModeEnum["New"] = 1] = "New";
     PatientDisplayModeEnum[PatientDisplayModeEnum["Edit"] = 2] = "Edit";
 })(PatientDisplayModeEnum || (PatientDisplayModeEnum = {}));
 //# sourceMappingURL=patient.component.js.map
