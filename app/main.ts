@@ -2,15 +2,12 @@
  * Created by NetSri on 30/06/2016.
  */
 import { bootstrap } from '@angular/platform-browser-dynamic';
-import { disableDeprecatedForms, provideForms } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { APP_ROUTER_PROVIDERS } from './app.routes';
 
 bootstrap(AppComponent,[
-    APP_ROUTER_PROVIDERS,
-    disableDeprecatedForms(),
-    provideForms()
+    APP_ROUTER_PROVIDERS
 ])
     .then(
         success => console.log('AppComponent bootstrapped!'),

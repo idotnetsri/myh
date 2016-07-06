@@ -1,7 +1,187 @@
 <div class="row">
     <div class="col-lg-12">
         <h1><i class="fa fa-user-plus" aria-hidden="true"></i> Register new patient</h1>
-        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="bs-callout bs-callout-primary">
+            <h3><i class="fa fa-info-circle" aria-hidden="true"></i> Before you create new patient</h3>
+            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and
+                will appear non-collapsed on larger screens. When toggled using the button below, the menu will
+                appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div [hidden]="submitted">
+            <form *ngIf="active" (ngSubmit)="onSubmit()" #patientForm="ngForm">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" required
+                           [(ngModel)]="model.firstName" id="firstName"
+                           ngControl="firstName" #firstName="ngForm">
+                    <div [hidden]="firstName.valid || firstName.pristine" class="alert alert-danger">
+                        First name is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" required
+                           [(ngModel)]="model.lastName" id="lastName"
+                           ngControl="lastName" #lastName="ngForm">
+                    <div [hidden]="lastName.valid || lastName.pristine" class="alert alert-danger">
+                        Last name is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" class="form-control" required
+                           [(ngModel)]="model.age" id="age"
+                           ngControl="age" #age="ngForm">
+                    <div [hidden]="age.valid || age.pristine" class="alert alert-danger">
+                        Age is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dateOfBirth">Date of birth</label>
+                    <input type="text" class="form-control" required
+                           [(ngModel)]="model.dateOfBirth" id="dateOfBirth"
+                           ngControl="dateOfBirth" #dateOfBirth="ngForm">
+                    <div [hidden]="dateOfBirth.valid || dateOfBirth.pristine" class="alert alert-danger">
+                        Date of birth is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile</label>
+                    <input type="text" class="form-control" required
+                           [(ngModel)]="model.mobile" id="mobile"
+                           ngControl="mobile" #mobile="ngForm">
+                    <div [hidden]="mobile.valid || mobile.pristine" class="alert alert-danger">
+                        Mobile is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="otherPhone">Other phone</label>
+                    <input type="text" class="form-control"
+                           [(ngModel)]="model.otherPhone" id="otherPhone"
+                           ngControl="otherPhone" #otherPhone="ngForm">
+                    <div [hidden]="otherPhone.valid || otherPhone.pristine" class="alert alert-danger">
+                        Other Phone is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="addressLine1">Address Line1</label>
+                    <input type="text" class="form-control" required
+                           [(ngModel)]="model.addressLine1" id="addressLine1"
+                           ngControl="addressLine1" #addressLine1="ngForm">
+                    <div [hidden]="addressLine1.valid || addressLine1.pristine" class="alert alert-danger">
+                        Address Line1 is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="addressLine2">Address Line2</label>
+                    <input type="text" class="form-control"
+                           [(ngModel)]="model.addressLine2" id="addressLine2"
+                           ngControl="addressLine2" #addressLine2="ngForm">
+                    <div [hidden]="addressLine2.valid || addressLine2.pristine" class="alert alert-danger">
+                        Address Line2 is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="addressLine3">Address Line3</label>
+                    <input type="text" class="form-control"
+                           [(ngModel)]="model.addressLine3" id="addressLine3"
+                           ngControl="addressLine3" #addressLine3="ngForm">
+                    <div [hidden]="addressLine3.valid || addressLine3.pristine" class="alert alert-danger">
+                        Address Line3 is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="addressLine4">Address Line4</label>
+                    <input type="text" class="form-control" required
+                           [(ngModel)]="model.addressLine4" id="addressLine4"
+                           ngControl="addressLine4" #addressLine4="ngForm">
+                    <div [hidden]="addressLine4.valid || addressLine4.pristine" class="alert alert-danger">
+                        Address Line4 is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" required
+                           [(ngModel)]="model.city" id="city"
+                           ngControl="city" #city="ngForm">
+                    <div [hidden]="city.valid || city.pristine" class="alert alert-danger">
+                        City is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control"
+                           [(ngModel)]="model.state" id="state"
+                           ngControl="state" #state="ngForm">
+                    <div [hidden]="state.valid || state.pristine" class="alert alert-danger">
+                        State is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="state">Zip</label>
+                    <input type="text" class="form-control"
+                           [(ngModel)]="model.zip" id="zip"
+                           ngControl="zip" #zip="ngForm">
+                    <div [hidden]="zip.valid || zip.pristine" class="alert alert-danger">
+                        Zip is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="occupation">Occupation</label>
+                    <input type="text" class="form-control"
+                           [(ngModel)]="model.occupation" id="occupation"
+                           ngControl="occupation" #occupation="ngForm">
+                    <div [hidden]="occupation.valid || occupation.pristine" class="alert alert-danger">
+                        Occupation is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ssn">National ID</label>
+                    <input type="text" class="form-control"
+                           [(ngModel)]="model.ssn" id="ssn"
+                           ngControl="ssn" #ssn="ngForm">
+                    <div [hidden]="ssn.valid || ssn.pristine" class="alert alert-danger">
+                        National Id is required
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="imageUrl">Image URL</label>
+                    <input type="text" class="form-control"
+                           [(ngModel)]="model.imageUrl" id="imageUrl"
+                           ngControl="imageUrl" #imageUrl="ngForm">
+                    <div [hidden]="imageUrl.valid || imageUrl.pristine" class="alert alert-danger">
+                        Image URL is required
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-default" [disabled]="!heroForm.form.valid">Submit</button>
+                <button type="button" class="btn btn-default" (click)="newHero()">New Hero</button>
+            </form>
+        </div>
+        <div [hidden]="!submitted">
+            <h2>You submitted the following:</h2>
+            <div class="row">
+                <div class="col-xs-3">Name</div>
+                <div class="col-xs-9  pull-left">{{ model.name }}</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">Alter Ego</div>
+                <div class="col-xs-9 pull-left">{{ model.alterEgo }}</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">Power</div>
+                <div class="col-xs-9 pull-left">{{ model.power }}</div>
+            </div>
+            <br>
+            <button class="btn btn-default" (click)="submitted=false">Edit</button>
+        </div>
     </div>
 </div>
