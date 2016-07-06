@@ -77,6 +77,5 @@ var DisplayModeEnum;
 (function (DisplayModeEnum) {
     DisplayModeEnum[DisplayModeEnum["Card"] = 0] = "Card";
     DisplayModeEnum[DisplayModeEnum["Grid"] = 1] = "Grid";
-    DisplayModeEnum[DisplayModeEnum["New"] = 2] = "New";
 })(DisplayModeEnum || (DisplayModeEnum = {}));
 //# sourceMappingURL=patients.component.js.map

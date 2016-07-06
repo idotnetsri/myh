@@ -9,20 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
+ * Created by NetSri on 06/07/2016.
+ */
+/**
  * Created by NetSri on 01/07/2016.
  */
 var core_1 = require('@angular/core');
-var NewPatientComponent = (function () {
-    function NewPatientComponent() {
+var CheckinQComponent = (function () {
+    function CheckinQComponent() {
     }
-    NewPatientComponent = __decorate([
+    CheckinQComponent = __decorate([
         core_1.Component({
-            selector: 'my-app-about',
-            templateUrl: './app/+patient/patient-new.component.html'
+            selector: 'my-app-checkinq',
+            templateUrl: './app/checkinq/checkinq.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], NewPatientComponent);
-    return NewPatientComponent;
+    ], CheckinQComponent);
+    return CheckinQComponent;
 }());
-exports.NewPatientComponent = NewPatientComponent;
-//# sourceMappingURL=patient-new.component.js.map
+exports.CheckinQComponent = CheckinQComponent;
+//# sourceMappingURL=checkinq.component.js.map

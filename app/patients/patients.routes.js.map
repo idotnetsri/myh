@@ -1,1 +1,1 @@
-{"version":3,"file":"patients.routes.js","sourceRoot":"","sources":["patients.routes.ts"],"names":[],"mappings":";AAKA,mCAAkC,sBAAsB,CAAC,CAAA;AAE5C,sBAAc,GAAiB;IACxC,yDAAyD;IACzD,EAAE,IAAI,EAAE,UAAU,EAAE,SAAS,EAAE,sCAAiB,EAAC;CACpD,CAAC"}
+{"version":3,"file":"patients.routes.js","sourceRoot":"","sources":["patients.routes.ts"],"names":[],"mappings":";AAKA,mCAAkC,sBAAsB,CAAC,CAAA;AACzD,sCAAoC,mCAAmC,CAAC,CAAA;AAE3D,sBAAc,GAAiB;IACxC;QACI,IAAI,EAAE,UAAU;QAChB,SAAS,EAAE,sCAAiB;KAC/B;IACD;QACI,IAAI,EAAE,cAAc;QACpB,SAAS,EAAE,2CAAmB;KACjC;CACJ,CAAC"}

@@ -1,5 +1,4 @@
 <div id="wrapper">
-
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -9,35 +8,88 @@
                 </a>
             </li>
             <li>
-                <a  href="#" [routerLink]="['/login']" *ngIf="!loggedIn" routerLinkActive="active">Login</a>
+                <a href="#" [routerLink]="['/login']" *ngIf="!loggedIn" routerLinkActive="active">Login</a>
             </li>
             <li>
-                <a  href="#" [routerLink]="['/dash']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Dashboard</a>
+                <a href="#" [routerLink]="['/dash']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Dashboard</a>
             </li>
+            <li role="separator" class="divider"></li>
             <li>
-                <a href="#" [routerLink]="['/patients']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Patients</a>
+                <a href="#" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Patients</a>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#" [routerLink]="['/patients/new']" *ngIf="loggedIn" routerLinkActive="active"
+                           *ngIf="loggedIn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> New Patient</a>
+                    </li>
+                    <li>
+                        <a href="#" [routerLink]="['/patients/']" *ngIf="loggedIn" routerLinkActive="active"
+                           *ngIf="loggedIn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Visited Today</a>
+                    </li>
+                    <li>
+                        <a href="#" [routerLink]="['/patients/']" *ngIf="loggedIn" routerLinkActive="active"
+                           *ngIf="loggedIn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Visited Last Month</a>
+                    </li>
+                </ul>
             </li>
+            <li role="separator" class="divider"></li>
             <li>
-                <a href="#" [routerLink]="['/appointments']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Appointments</a>
+                <a href="#" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Appointments</a>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#" [routerLink]="['/patients/today']" *ngIf="loggedIn" routerLinkActive="active"
+                           *ngIf="loggedIn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Today</a>
+                    </li>
+                    <li>
+                        <a href="#" [routerLink]="['/patients/tomorrow']" *ngIf="loggedIn" routerLinkActive="active"
+                           *ngIf="loggedIn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Tomorrow</a>
+                    </li>
+                    <li>
+                        <a href="#" [routerLink]="['/patients/nextweek']" *ngIf="loggedIn" routerLinkActive="active"
+                           *ngIf="loggedIn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Next Week</a>
+                    </li>
+                </ul>
             </li>
+            <li role="separator" class="divider"></li>
             <li>
-                <a href="#" [routerLink]="['/checkinqs']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">CheckIn Qs</a>
+                <a href="#" [routerLink]="['/checkinq']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">CheckIn
+                    Qs</a>
             </li>
+            <li role="separator" class="divider"></li>
             <li>
-                <a href="#" [routerLink]="['/messages']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Messages</a>
+                <a href="#" [routerLink]="['/mymessages']" *ngIf="loggedIn" routerLinkActive="active" *ngIf="loggedIn">Messages</a>
             </li>
+            <li role="separator" class="divider"></li>
             <li>
                 <a [routerLink]="['/about']" routerLinkActive="active">About</a>
             </li>
             <li>
-                <a href="#" [routerLink]="['/logout']" *ngIf="loggedIn" routerLinkActive="active" href="#"*ngIf="loggedIn">Logout</a>
+                <a href="#" [routerLink]="['/logout']" *ngIf="loggedIn" routerLinkActive="active" href="#"
+                   *ngIf="loggedIn">Logout</a>
             </li>
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
-    <a href="#" (click)="menuToggle($event)" class="btn btn-default" id="menu-toggle">
-        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-    </a>
+    <!--panel top bar -->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" (click)="menuToggle($event)" class="btn btn-default btn-lg" id="menu-toggle">
+                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-lg" placeholder="Search patient...">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default btn-lg" type="button">Go!</button>
+                          </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#panel top bar -->
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
@@ -45,13 +97,12 @@
         </div>
     </div>
     <!-- /#page-content-wrapper -->
-
 </div>
-<!-- /#wrapper -->
-<!--&lt;!&ndash; Menu Toggle Script &ndash;&gt;-->
-<!--<script>-->
-    <!--$("#menu-toggle").click(function(e) {-->
-        <!--e.preventDefault();-->
-        <!--$("#wrapper").toggleClass("toggled");-->
-    <!--});-->
-<!--</script>-->
+<!--#wrapper -->
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>

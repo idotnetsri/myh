@@ -28,10 +28,7 @@ export class PatientComponent implements OnInit {
                 break;
             case 'edit':
                 this.displayMode = PatientDisplayModeEnum.Edit;
-                break;
-            case 'new':
-                this.displayMode = PatientDisplayModeEnum.New;
-                break;
+                break; 
         }
     }
 
@@ -39,6 +36,5 @@ export class PatientComponent implements OnInit {
 
 enum PatientDisplayModeEnum {
     Details=0,
-    New=1,
-    Edit=2
+    Edit=1
 }

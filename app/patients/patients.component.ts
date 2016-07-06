@@ -68,6 +68,5 @@ export class PatientsComponent implements OnInit{
 
 enum DisplayModeEnum {
     Card = 0,
-    Grid = 1,
-    New = 2
+    Grid = 1
 }

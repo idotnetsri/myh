@@ -6,7 +6,6 @@ import { RouterConfig } from '@angular/router';
 import { PatientComponent }   from './patient.component';
 import { PatientDetailsComponent } from './patient-details.component';
 import { PatientEditComponent } from './patient-edit.component';
-import { NewPatientComponent } from './patient-new.component';
 
 export const PatientRoutes: RouterConfig = [
     {
@@ -14,8 +13,7 @@ export const PatientRoutes: RouterConfig = [
         component: PatientComponent,
         children: [
             { path:'details', component: PatientDetailsComponent },
-            { path:'edit', component: PatientEditComponent },
-            { path:'new', component: NewPatientComponent }
+            { path:'edit', component: PatientEditComponent }
         ]
     }
 ];

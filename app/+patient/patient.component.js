@@ -30,9 +30,6 @@ var PatientComponent = (function () {
             case 'edit':
                 this.displayMode = PatientDisplayModeEnum.Edit;
                 break;
-            case 'new':
-                this.displayMode = PatientDisplayModeEnum.New;
-                break;
         }
     };
     PatientComponent = __decorate([
@@ -50,7 +47,6 @@ exports.PatientComponent = PatientComponent;
 var PatientDisplayModeEnum;
 (function (PatientDisplayModeEnum) {
     PatientDisplayModeEnum[PatientDisplayModeEnum["Details"] = 0] = "Details";
-    PatientDisplayModeEnum[PatientDisplayModeEnum["New"] = 1] = "New";
-    PatientDisplayModeEnum[PatientDisplayModeEnum["Edit"] = 2] = "Edit";
+    PatientDisplayModeEnum[PatientDisplayModeEnum["Edit"] = 1] = "Edit";
 })(PatientDisplayModeEnum || (PatientDisplayModeEnum = {}));
 //# sourceMappingURL=patient.component.js.map

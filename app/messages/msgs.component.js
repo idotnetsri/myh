@@ -9,20 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
- * Created by NetSri on 01/07/2016.
+ * Created by NetSri on 06/07/2016.
  */
 var core_1 = require('@angular/core');
-var NewPatientComponent = (function () {
-    function NewPatientComponent() {
+var MsgsComponent = (function () {
+    function MsgsComponent() {
     }
-    NewPatientComponent = __decorate([
+    MsgsComponent = __decorate([
         core_1.Component({
-            selector: 'my-app-about',
-            templateUrl: './app/+patient/patient-new.component.html'
+            selector: 'my-app-dash',
+            templateUrl: './app/messages/msgs.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], NewPatientComponent);
-    return NewPatientComponent;
+    ], MsgsComponent);
+    return MsgsComponent;
 }());
-exports.NewPatientComponent = NewPatientComponent;
-//# sourceMappingURL=patient-new.component.js.map
+exports.MsgsComponent = MsgsComponent;
+//# sourceMappingURL=msgs.component.js.map

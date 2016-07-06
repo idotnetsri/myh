@@ -2,50 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2732e9ee-078c-419d-a9a6-fc624c8c1584" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/+patient/patient-new.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/+patient/patient-new.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shared/services/validator.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/checkinq/checkinq.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/checkinq/checkinq.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/messages/msgs.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/messages/msgs.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/shared/interfaces/INewPatient.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient-details.component.html" afterPath="$PROJECT_DIR$/app/+patient/patient-details.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient-details.component.js" afterPath="$PROJECT_DIR$/app/+patient/patient-details.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient-edit.component.html" afterPath="$PROJECT_DIR$/app/+patient/patient-edit.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient-edit.component.js" afterPath="$PROJECT_DIR$/app/+patient/patient-edit.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient-edit.component.js.map" afterPath="$PROJECT_DIR$/app/+patient/patient-edit.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient-edit.component.ts" afterPath="$PROJECT_DIR$/app/+patient/patient-edit.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient-new.component.html" afterPath="$PROJECT_DIR$/app/+patient/patient-new.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient-new.component.js" afterPath="$PROJECT_DIR$/app/+patient/patient-new.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient-new.component.js.map" afterPath="$PROJECT_DIR$/app/+patient/patient-new.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient-new.component.ts" afterPath="$PROJECT_DIR$/app/+patient/patient-new.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient.component.html" afterPath="$PROJECT_DIR$/app/+patient/patient.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient.component.js" afterPath="$PROJECT_DIR$/app/+patient/patient.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient.component.js.map" afterPath="$PROJECT_DIR$/app/+patient/patient.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient.component.ts" afterPath="$PROJECT_DIR$/app/+patient/patient.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient.routes.js" afterPath="$PROJECT_DIR$/app/+patient/patient.routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient.routes.js.map" afterPath="$PROJECT_DIR$/app/+patient/patient.routes.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/+patient/patient.routes.ts" afterPath="$PROJECT_DIR$/app/+patient/patient.routes.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/about/about.component.js" afterPath="$PROJECT_DIR$/app/about/about.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.component.js" afterPath="$PROJECT_DIR$/app/app.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.constants.js" afterPath="$PROJECT_DIR$/app/app.constants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.providers.js" afterPath="$PROJECT_DIR$/app/app.providers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/about/about.component.html" afterPath="$PROJECT_DIR$/app/about/about.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.component.html" afterPath="$PROJECT_DIR$/app/app.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.routes.js" afterPath="$PROJECT_DIR$/app/app.routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.routes.js.map" afterPath="$PROJECT_DIR$/app/app.routes.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.routes.ts" afterPath="$PROJECT_DIR$/app/app.routes.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dash/dash.component.js" afterPath="$PROJECT_DIR$/app/dash/dash.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/filter-textbox/filter-textbox.component.js" afterPath="$PROJECT_DIR$/app/filter-textbox/filter-textbox.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/login/login.component.js" afterPath="$PROJECT_DIR$/app/login/login.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main.js" afterPath="$PROJECT_DIR$/app/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/patients/patients-card.component.js" afterPath="$PROJECT_DIR$/app/patients/patients-card.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/patients/patients-grid.component.js" afterPath="$PROJECT_DIR$/app/patients/patients-grid.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dash/dash.component.html" afterPath="$PROJECT_DIR$/app/dash/dash.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/patients/patients.component.html" afterPath="$PROJECT_DIR$/app/patients/patients.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/patients/patients.component.js" afterPath="$PROJECT_DIR$/app/patients/patients.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/patients/patients.component.js.map" afterPath="$PROJECT_DIR$/app/patients/patients.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/patients/patients.component.ts" afterPath="$PROJECT_DIR$/app/patients/patients.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/patients/patients.routes.js" afterPath="$PROJECT_DIR$/app/patients/patients.routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/directives/sortby.directive.js" afterPath="$PROJECT_DIR$/app/shared/directives/sortby.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/interfaces/IPatientBrief.js" afterPath="$PROJECT_DIR$/app/shared/interfaces/IPatientBrief.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/interfaces/IPatientReview.js" afterPath="$PROJECT_DIR$/app/shared/interfaces/IPatientReview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/interfaces/IPatientUpdate.js" afterPath="$PROJECT_DIR$/app/shared/interfaces/IPatientUpdate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/pipes/capitalize.pipe.js" afterPath="$PROJECT_DIR$/app/shared/pipes/capitalize.pipe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/pipes/trim.pipe.js" afterPath="$PROJECT_DIR$/app/shared/pipes/trim.pipe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/services/data.service.js" afterPath="$PROJECT_DIR$/app/shared/services/data.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/services/data.service.js.map" afterPath="$PROJECT_DIR$/app/shared/services/data.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/services/data.service.ts" afterPath="$PROJECT_DIR$/app/shared/services/data.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/services/trackby.service.js" afterPath="$PROJECT_DIR$/app/shared/services/trackby.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/utils/sorter.js" afterPath="$PROJECT_DIR$/app/shared/utils/sorter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/patients/patients.routes.js.map" afterPath="$PROJECT_DIR$/app/patients/patients.routes.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/patients/patients.routes.ts" afterPath="$PROJECT_DIR$/app/patients/patients.routes.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/simple-sidebar.css" afterPath="$PROJECT_DIR$/css/simple-sidebar.css" />
     </list>
     <ignored path="myhweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,14 +58,123 @@
     <favorites_list name="myhweb" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="patient-new.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/+patient/patient-new.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/about/about.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dash.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dash/dash.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkinq.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/checkinq/checkinq.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#44#87#0" expanded="false" />
+                <marker date="1467807080907" expanded="true" signature="269:273" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.routes.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.routes.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="29" column="23" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="23" />
+              <folding>
+                <element signature="e#44#107#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#script#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkinq.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/checkinq/checkinq.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dash.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dash/dash.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="msgs.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/messages/msgs.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="patients-card.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/patients/patients-card.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -88,26 +189,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/systemjs.config.js" />
-        <option value="$PROJECT_DIR$/css/simple-sidebar.css" />
-        <option value="$PROJECT_DIR$/app/login/login.component.ts" />
-        <option value="$PROJECT_DIR$/app/login/login.component.html" />
-        <option value="$PROJECT_DIR$/app/about/about.component.html" />
-        <option value="$PROJECT_DIR$/app/about/about.component.ts" />
-        <option value="$PROJECT_DIR$/app/dash/about.component.js" />
-        <option value="$PROJECT_DIR$/app/dash/dash.component.ts" />
-        <option value="$PROJECT_DIR$/app/patients/patient.component.html" />
-        <option value="$PROJECT_DIR$/app/patients/patient.component.ts" />
         <option value="$PROJECT_DIR$/app/patients/patient-visits.component.html" />
         <option value="$PROJECT_DIR$/app/patients/patient-visits.component.ts" />
         <option value="$PROJECT_DIR$/app/patients/patient-details.component.html" />
         <option value="$PROJECT_DIR$/app/patients/patient-details.component.ts" />
         <option value="$PROJECT_DIR$/app/patients/patient-edit.component.html" />
         <option value="$PROJECT_DIR$/app/patients/patient-edit.component.ts" />
-        <option value="$PROJECT_DIR$/app/patients/patients.routes.ts" />
         <option value="$PROJECT_DIR$/app/filter-textbox/filter-textbox.component.ts" />
         <option value="$PROJECT_DIR$/app/shared/IPatientList.ts" />
-        <option value="$PROJECT_DIR$/app/app.component.html" />
         <option value="$PROJECT_DIR$/app/shared/interfaces/IPatientBrief.ts" />
         <option value="$PROJECT_DIR$/app/shared/services/trackby.service.ts" />
         <option value="$PROJECT_DIR$/app/main.ts" />
@@ -115,7 +204,6 @@
         <option value="$PROJECT_DIR$/css/dans.css" />
         <option value="$PROJECT_DIR$/app/patients/patients-card.component.css" />
         <option value="$PROJECT_DIR$/app/patients/patients.component.css" />
-        <option value="$PROJECT_DIR$/app/+patient/patient.component.html" />
         <option value="$PROJECT_DIR$/app/patients/patients-card.component.ts" />
         <option value="$PROJECT_DIR$/app/patients/patients-grid.component.ts" />
         <option value="$PROJECT_DIR$/app/shared/interfaces/IPatientReview.ts" />
@@ -126,19 +214,32 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/patients/patients-card.component.html" />
         <option value="$PROJECT_DIR$/app/patients/patients-grid.component.html" />
-        <option value="$PROJECT_DIR$/app/+patient/patient-edit.component.html" />
         <option value="$PROJECT_DIR$/app/+patient/patient-new.component.ts.html" />
         <option value="$PROJECT_DIR$/app/shared/services/data.service.ts" />
-        <option value="$PROJECT_DIR$/app/+patient/patient-edit.component.ts" />
-        <option value="$PROJECT_DIR$/app/+patient/patient.routes.ts" />
-        <option value="$PROJECT_DIR$/app/app.routes.ts" />
         <option value="$PROJECT_DIR$/app/shared/services/validator.service.ts" />
-        <option value="$PROJECT_DIR$/app/+patient/patient-new.component.html" />
-        <option value="$PROJECT_DIR$/app/+patient/patient-details.component.html" />
-        <option value="$PROJECT_DIR$/app/+patient/patient.component.ts" />
+        <option value="$PROJECT_DIR$/app/shared/interfaces/INewPatient.ts" />
+        <option value="$PROJECT_DIR$/css/facebook-style-form.css" />
+        <option value="$PROJECT_DIR$/app/+patient/patient-edit.component.html" />
         <option value="$PROJECT_DIR$/app/+patient/patient-new.component.ts" />
+        <option value="$PROJECT_DIR$/app/+patient/patient-edit.component.ts" />
+        <option value="$PROJECT_DIR$/app/+patient/patient-details.component.html" />
+        <option value="$PROJECT_DIR$/app/+patient/patient.routes.ts" />
+        <option value="$PROJECT_DIR$/app/+patient/patient.component.ts" />
+        <option value="$PROJECT_DIR$/app/+patient/patient.component.html" />
         <option value="$PROJECT_DIR$/app/patients/patients.component.ts" />
+        <option value="$PROJECT_DIR$/css/simple-sidebar.css" />
+        <option value="$PROJECT_DIR$/app/dash/dash.component.ts" />
+        <option value="$PROJECT_DIR$/app/messages/msgs.component.ts" />
+        <option value="$PROJECT_DIR$/app/patients/patients.routes.ts" />
+        <option value="$PROJECT_DIR$/app/+patient/patient-new.component.html" />
+        <option value="$PROJECT_DIR$/app/messages/msgs.component.html" />
         <option value="$PROJECT_DIR$/app/patients/patients.component.html" />
+        <option value="$PROJECT_DIR$/app/about/about.component.html" />
+        <option value="$PROJECT_DIR$/app/dash/dash.component.html" />
+        <option value="$PROJECT_DIR$/app/app.routes.ts" />
+        <option value="$PROJECT_DIR$/app/checkinq/checkinq.component.html" />
+        <option value="$PROJECT_DIR$/app/checkinq/checkinq.component.ts" />
+        <option value="$PROJECT_DIR$/app/app.component.html" />
       </list>
     </option>
   </component>
@@ -179,6 +280,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,6 +310,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myhweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myhweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -225,7 +342,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
+              <option name="myItemId" value="dash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -243,72 +360,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myhweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myhweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patients" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myhweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myhweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="about" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myhweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myhweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="+patient" />
+              <option name="myItemId" value="checkinq" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -324,15 +381,15 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\myh\myhweb\app\patients" />
-      <recent name="E:\Projects\myh\myhweb\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Projects\myh\myhweb\app\+patient" />
       <recent name="E:\Projects\myh\myhweb\images" />
       <recent name="E:\Projects\myh\myhweb\app" />
       <recent name="E:\Projects\myh\myhweb" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\myh\myhweb\app\patients" />
+      <recent name="E:\Projects\myh\myhweb\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -750,27 +807,28 @@
       <workItem from="1467634199713" duration="4000" />
       <workItem from="1467650861971" duration="675000" />
       <workItem from="1467652805955" duration="2627000" />
-      <workItem from="1467707442597" duration="6828000" />
+      <workItem from="1467707442597" duration="20829000" />
+      <workItem from="1467796334325" duration="8419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63107000" />
+    <option name="totallyTimeSpent" value="85527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-1058" width="1634" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17577706" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17577706" sideWeight="0.4974587" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26795283" sideWeight="0.51016515" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27116826" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26795283" sideWeight="0.48983482" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21410419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -785,7 +843,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.4974587" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -801,7 +859,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -810,15 +868,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/font-awesome-4.6.3/css/font-awesome.css" />
-    <entry file="file://$PROJECT_DIR$/app/about/about.component.html" />
-    <entry file="file://$PROJECT_DIR$/app/login/login.component.html" />
-    <entry file="file://$PROJECT_DIR$/app/dash/about.component.js" />
-    <entry file="file://$PROJECT_DIR$/app/dash/dash.component.ts" />
-    <entry file="file://$PROJECT_DIR$/app/login/login.component.ts" />
-    <entry file="file://$PROJECT_DIR$/app/patients/patient.component.html" />
-    <entry file="file://$PROJECT_DIR$/app/patients/patient-visits.component.html" />
-    <entry file="file://$PROJECT_DIR$/app/patients/patient.component.ts" />
     <entry file="file://$PROJECT_DIR$/app/patients/patient-details.component.html" />
     <entry file="file://$PROJECT_DIR$/app/patients/patient-visits.component.ts" />
     <entry file="file://$PROJECT_DIR$/app/patients/patient-details.component.ts" />
@@ -828,8 +877,6 @@
     <entry file="file://$PROJECT_DIR$/app/shared/IPatientList.ts" />
     <entry file="file://$PROJECT_DIR$/app/shared/pipes/capitalize.pipe.ts" />
     <entry file="file://$PROJECT_DIR$/app/shared/services/trackby.service.ts" />
-    <entry file="file://$PROJECT_DIR$/app/app.component.html" />
-    <entry file="file://$PROJECT_DIR$/css/simple-sidebar.css" />
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -839,20 +886,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/patients/patients.component.css" />
     <entry file="file://$PROJECT_DIR$/app/patients/patients-grid.component.ts" />
-    <entry file="file://$PROJECT_DIR$/app/shared/interfaces/IPatientReview.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="16" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/shared/interfaces/IPatientUpdate.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/shared/interfaces/IPatientBrief.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -867,32 +900,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.providers.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/patients/patients-grid.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -912,79 +924,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/about/about.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#44#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/shared/services/validator.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc;n#ValidationService#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/patients/patients-card.component.html">
+    <entry file="file://$PROJECT_DIR$/app/shared/interfaces/IPatientReview.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="113">
+          <caret line="16" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/+patient/patient-edit.component.html">
+    <entry file="file://$PROJECT_DIR$/app/shared/interfaces/IPatientUpdate.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/+patient/patient-new.component.html">
+    <entry file="file://$PROJECT_DIR$/app/shared/interfaces/INewPatient.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding>
-            <element signature="n#select#0;n#div#12;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/+patient/patient-edit.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/+patient/patient.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="21" column="19" selection-start-line="4" selection-start-column="3" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -992,6 +956,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/facebook-style-form.css" />
+    <entry file="file://$PROJECT_DIR$/app/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/about/about.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/+patient/patient-edit.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/+patient/patient-details.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/+patient/patient.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/+patient/patient-edit.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1004,65 +1017,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/+patient/patient-details.component.html">
+    <entry file="file://$PROJECT_DIR$/app/patients/patients.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/+patient/patient-new.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+        <state relative-caret-position="1156">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
           <folding>
-            <element signature="e#44#87#0" expanded="false" />
-            <element signature="e#88#138#0" expanded="true" />
+            <element signature="e#44#94#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/+patient/patient.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="476">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding>
             <element signature="e#44#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/+patient/patient.routes.ts">
+    <entry file="file://$PROJECT_DIR$/app/app.providers.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="62" />
+        <state relative-caret-position="153">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/patients/patients-grid.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/simple-sidebar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/messages/msgs.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/patients/patients.routes.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+          <folding>
+            <element signature="e#44#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/+patient/patient.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/+patient/patient-new.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/patients/patients.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="51">
+          <caret line="3" column="59" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/patients/patients.component.ts">
+    <entry file="file://$PROJECT_DIR$/app/patients/patients-card.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="85">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/messages/msgs.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/+patient/patient-new.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/about/about.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dash/dash.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dash/dash.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/checkinq/checkinq.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#44#94#0" expanded="true" />
+            <element signature="e#44#87#0" expanded="false" />
+            <marker date="1467807080907" expanded="true" signature="269:273" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/checkinq/checkinq.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#44#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
