@@ -6,7 +6,8 @@ import { FormBuilder, Validators } from '@angular/common';
 
 @Component({
     selector: 'my-app-login',
-    templateUrl: './app/login/login.component.html'
+    templateUrl: './app/login/login.component.html',
+    styleUrls:['./app/login/login.component.css'],
 })
 export class LoginComponent {
     loginForm:any;

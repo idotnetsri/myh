@@ -15,21 +15,21 @@ export class NewPatientComponent{
 
     constructor (private fb: FormBuilder) {
         this.patientForm = fb.group({
-            firstName: ["", Validators.required],
-            lastName: ["", Validators.required],
+            firstName: ['', Validators.compose([Validators.required, Validators.minLength(2), Validators.maxLength(100)])],
+            lastName: ['', Validators.compose([Validators.required, Validators.minLength(2), Validators.maxLength(100)])],
             gender: [0, Validators.required],
             age: ["", Validators.required],
             dateOfBirth: ["", Validators.required],
-            mobile: ["", Validators.required],
-            otherPhone: ["",Validators.maxLength(15)],
-            addressLine1: ["", Validators.required],
-            addressLine2: [""],
-            city: [""],
-            ssn: [""],
-            state: [""],
-            zip: [""],
-            occupation: [""],
-            imageUrl: [""],
+            mobile: ['', Validators.compose([Validators.required, Validators.minLength(10), Validators.maxLength(15)])],
+            otherPhone: ['',Validators.maxLength(15)],
+            addressLine1: ['', Validators.compose([Validators.required, Validators.minLength(2), Validators.maxLength(100)])],
+            addressLine2: ['',Validators.maxLength(100)],
+            city: ['', Validators.compose([Validators.required, Validators.minLength(2), Validators.maxLength(100)])],
+            ssn: ['', Validators.maxLength(20)],
+            state: ['', Validators.maxLength(100)],
+            zip: ['', Validators.maxLength(20)],
+            occupation: ['', Validators.maxLength(100)],
+            imageUrl: ['', Validators.maxLength(150)],
             countryCode: ["", Validators.required],
         });
     }
@@ -49,4 +49,6 @@ export class NewPatientComponent{
         event.preventDefault();
         this.infoActive = !this.infoActive;
     }
+
+    get diagnostic() { return JSON.stringify(this.patientForm.value); }
 }

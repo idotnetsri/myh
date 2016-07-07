@@ -17,21 +17,21 @@ var NewPatientComponent = (function () {
         this.model = new patient_new_1.NewPatient('', '', 0, 0, '', '', '', '', '', '', '', '', '', '', '');
         this.infoActive = false;
         this.patientForm = fb.group({
-            firstName: ["", common_1.Validators.required],
-            lastName: ["", common_1.Validators.required],
+            firstName: ['', common_1.Validators.compose([common_1.Validators.required, common_1.Validators.minLength(2), common_1.Validators.maxLength(100)])],
+            lastName: ['', common_1.Validators.compose([common_1.Validators.required, common_1.Validators.minLength(2), common_1.Validators.maxLength(100)])],
             gender: [0, common_1.Validators.required],
             age: ["", common_1.Validators.required],
             dateOfBirth: ["", common_1.Validators.required],
-            mobile: ["", common_1.Validators.required],
-            otherPhone: ["", common_1.Validators.maxLength(15)],
-            addressLine1: ["", common_1.Validators.required],
-            addressLine2: [""],
-            city: [""],
-            ssn: [""],
-            state: [""],
-            zip: [""],
-            occupation: [""],
-            imageUrl: [""],
+            mobile: ['', common_1.Validators.compose([common_1.Validators.required, common_1.Validators.minLength(10), common_1.Validators.maxLength(15)])],
+            otherPhone: ['', common_1.Validators.maxLength(15)],
+            addressLine1: ['', common_1.Validators.compose([common_1.Validators.required, common_1.Validators.minLength(2), common_1.Validators.maxLength(100)])],
+            addressLine2: ['', common_1.Validators.maxLength(100)],
+            city: ['', common_1.Validators.compose([common_1.Validators.required, common_1.Validators.minLength(2), common_1.Validators.maxLength(100)])],
+            ssn: ['', common_1.Validators.maxLength(20)],
+            state: ['', common_1.Validators.maxLength(100)],
+            zip: ['', common_1.Validators.maxLength(20)],
+            occupation: ['', common_1.Validators.maxLength(100)],
+            imageUrl: ['', common_1.Validators.maxLength(150)],
             countryCode: ["", common_1.Validators.required],
         });
     }
@@ -46,6 +46,11 @@ var NewPatientComponent = (function () {
         event.preventDefault();
         this.infoActive = !this.infoActive;
     };
+    Object.defineProperty(NewPatientComponent.prototype, "diagnostic", {
+        get: function () { return JSON.stringify(this.patientForm.value); },
+        enumerable: true,
+        configurable: true
+    });
     NewPatientComponent = __decorate([
         core_1.Component({
             selector: 'my-app-patient-new',
