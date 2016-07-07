@@ -1,13 +1,22 @@
 <div class="row">
     <div class="col-lg-12">
-        <h1><i class="fa fa-user-plus" aria-hidden="true"></i> Register new patient</h1>
+        <span class="pull-left">
+            <h1><i class="fa fa-user-plus" aria-hidden="true"></i> Register Patient</h1>
+        </span>
+        <span class="pull-right">
+             <a href="#" (click)="clickedInfo($event)" class="btn btn-default btn-lg">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </a>
+        </span>
     </div>
 </div>
-<div class="row">
+<div class="clearfix"><br></div>
+<div class="row" *ngIf="infoActive">
     <div class="col-md-12">
         <div class="bs-callout bs-callout-primary">
-            <h3><i class="fa fa-info-circle" aria-hidden="true"></i> Before you create new patient</h3>
-            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and
+            <h3><i class="fa fa-info-circle" aria-hidden="true"></i> Before you register patient</h3>
+            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens,
+                and
                 will appear non-collapsed on larger screens. When toggled using the button below, the menu will
                 appear/disappear. On small screens, the page content will be pushed off canvas.</p>
             <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
@@ -15,173 +24,234 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-12">
-        <div [hidden]="submitted">
-            <form *ngIf="active" (ngSubmit)="onSubmit()" #patientForm="ngForm">
+    <div class="col-md-12">
+        <form [ngFormModel]="patientForm" (submit)="doReg($event)" role="form" class="form-horizontal" #f="ngForm">
+            <fieldset>
+                <legend>Person Details</legend>
                 <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" required
-                           [(ngModel)]="model.firstName" id="firstName"
-                           ngControl="firstName" #firstName="ngForm">
-                    <div [hidden]="firstName.valid || firstName.pristine" class="alert alert-danger">
-                        First name is required
+                    <label class="col-sm-2 control-label">Gender</label>
+                    <div class="col-sm-10">
+                        <input type="radio" name="gender"  (click)="model.gender=1"  ngControl="gender" value="1"> Male&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="gender"  (click)="model.gender=2"  ngControl="gender" value="2"> Female&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="gender"  (click)="model.gender=3"  ngControl="gender" value="3"> Other
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" required
-                           [(ngModel)]="model.lastName" id="lastName"
-                           ngControl="lastName" #lastName="ngForm">
-                    <div [hidden]="lastName.valid || lastName.pristine" class="alert alert-danger">
-                        Last name is required
+                    <label class="col-sm-2 control-label" for="mobile">Mobile</label>
+                    <div class="col-sm-4">
+                        <input ngControl="mobile" id="mobile" type="text" placeholder="Mobile"  [(ngModel)]="model.mobile" class="form-control"
+                               required>
+                    </div>
+
+                    <label class="col-sm-2 control-label" for="otherPhone">Any Other Phone</label>
+                    <div class="col-sm-4">
+                        <input ngControl="otherPhone" id="otherPhone" type="text" placeholder="First name"
+                               class="form-control" [(ngModel)]="model.otherPhone" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="age">Age</label>
-                    <input type="text" class="form-control" required
-                           [(ngModel)]="model.age" id="age"
-                           ngControl="age" #age="ngForm">
-                    <div [hidden]="age.valid || age.pristine" class="alert alert-danger">
-                        Age is required
+                    <label class="col-sm-2 control-label" for="firstName">First Name</label>
+                    <div class="col-sm-4">
+                        <input ngControl="firstName" id="firstName" type="text" placeholder="First name"
+                               class="form-control" [(ngModel)]="model.firstName" required>
+                    </div>
+                    <label class="col-sm-2 control-label" for="lastName">Last Name</label>
+                    <div class="col-sm-4">
+                        <input ngControl="lastName" id="lastName" type="text" placeholder="First name"
+                               class="form-control" [(ngModel)]="model.lastName" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="dateOfBirth">Date of birth</label>
-                    <input type="text" class="form-control" required
-                           [(ngModel)]="model.dateOfBirth" id="dateOfBirth"
-                           ngControl="dateOfBirth" #dateOfBirth="ngForm">
-                    <div [hidden]="dateOfBirth.valid || dateOfBirth.pristine" class="alert alert-danger">
-                        Date of birth is required
+                    <label class="col-sm-2 control-label" for="age">Age</label>
+                    <div class="col-sm-4">
+                        <input ngControl="age" id="age" type="text" placeholder="Age" class="form-control" required>
+                    </div>
+                    <label class="col-sm-2 control-label" for="dateOfBirth">Date Of Birth</label>
+                    <div class="col-sm-4">
+                        <input ngControl="dateOfBirth" id="dateOfBirth" type="text" placeholder="dd/MM/YYYY"
+                               class="form-control" [(ngModel)]="model.dateOfBirth" required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <!-- Other Details -->
+                <legend>Other Details</legend>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="ssn">National Id</label>
+                    <div class="col-sm-4">
+                        <input ngControl="ssn" id="ssn" type="text" placeholder="SSN" class="form-control" [(ngModel)]="model.ssn">
+                    </div>
+                    <label class="col-sm-2 control-label" for="occupation">Occupation</label>
+                    <div class="col-sm-4">
+                        <input ngControl="occupation" id="occupation" type="text" placeholder="Occupation"
+                               class="form-control" [(ngModel)]="model.occupation">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="mobile">Mobile</label>
-                    <input type="text" class="form-control" required
-                           [(ngModel)]="model.mobile" id="mobile"
-                           ngControl="mobile" #mobile="ngForm">
-                    <div [hidden]="mobile.valid || mobile.pristine" class="alert alert-danger">
-                        Mobile is required
+                    <label class="col-sm-2 control-label" for="imageUrl">Image URL</label>
+                    <div class="col-sm-10">
+                        <input ngControl="imageUrl" id="imageUrl" type="text" placeholder="Image URL"
+                               class="form-control" [(ngModel)]="model.imageUrl">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+
+                <!-- Address Details -->
+                <legend>Address Details</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="addressLine1">Line 1</label>
+                    <div class="col-sm-10">
+                        <input ngControl="addressLine1" id="addressLine1" type="text" placeholder="Address Line1"
+                               class="form-control" [(ngModel)]="model.addressLine1" required>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="addressLine2">Line 2</label>
+                    <div class="col-sm-10">
+                        <input ngControl="addressLine2" id="addressLine2" type="text" placeholder="Address Line2"
+                               class="form-control" [(ngModel)]="model.addressLine2">
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="city">City</label>
+                    <div class="col-sm-10">
+                        <input ngControl="city" id="city" type="text" placeholder="City" class="form-control"
+                               [(ngModel)]="model.city" required>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="state">State</label>
+                    <div class="col-sm-4">
+                        <input ngControl="state" id="state" type="text" placeholder="State" class="form-control"
+                               [(ngModel)]="model.state" >
+                    </div>
+
+                    <label class="col-sm-2 control-label" for="zip">Postcode</label>
+                    <div class="col-sm-4">
+                        <input ngControl="zip" id="zip" type="text" placeholder="Postcode or Zip" class="form-control"
+                               [(ngModel)]="model.zip" >
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="countryCode">Country</label>
+                    <div class="col-sm-10">
+                        <select name="countryCode" class="form-control" id="countryCode" ngControl="countryCode" [(ngModel)]="model.countryCode"
+                                required>
+                            <option value=""></option>
+                            <option value="AR">Argentina</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="BY">Belarus</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BA">Bosnia and Herzegovina</option>
+                            <option value="BR">Brazil</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="CA">Canada</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CO">Colombia</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="HR">Croatia</option>
+                            <option value="CU">Cuba</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czech Republic</option>
+                            <option value="DK">Denmark</option>
+                            <option value="DO">Dominican Republic</option>
+                            <option value="EG">Egypt</option>
+                            <option value="EE">Estonia</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="GE">Georgia</option>
+                            <option value="DE">Germany</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GR">Greece</option>
+                            <option value="HK">Hong Kong S.A.R., China</option>
+                            <option value="HU">Hungary</option>
+                            <option value="IS">Iceland</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IR">Iran</option>
+                            <option value="IQ">Iraq</option>
+                            <option value="IE">Ireland</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italy</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japan</option>
+                            <option value="KZ">Kazakhstan</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="KG">Kyrgyzstan</option>
+                            <option value="LA">Laos</option>
+                            <option value="LV">Latvia</option>
+                            <option value="LB">Lebanon</option>
+                            <option value="LT">Lithuania</option>
+                            <option value="LU">Luxembourg</option>
+                            <option value="MK">Macedonia</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="MT">Malta</option>
+                            <option value="MX">Mexico</option>
+                            <option value="MD">Moldova</option>
+                            <option value="MC">Monaco</option>
+                            <option value="ME">Montenegro</option>
+                            <option value="MA">Morocco</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="KP">North Korea</option>
+                            <option value="NO">Norway</option>
+                            <option value="PK">Pakistan</option>
+                            <option value="PS">Palestinian Territory</option>
+                            <option value="PE">Peru</option>
+                            <option value="PH">Philippines</option>
+                            <option value="PL">Poland</option>
+                            <option value="PT">Portugal</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="QA">Qatar</option>
+                            <option value="RO">Romania</option>
+                            <option value="RU">Russia</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="RS">Serbia</option>
+                            <option value="SG">Singapore</option>
+                            <option value="SK">Slovakia</option>
+                            <option value="SI">Slovenia</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="KR">South Korea</option>
+                            <option value="ES">Spain</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="SE">Sweden</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="TW">Taiwan</option>
+                            <option value="TH">Thailand</option>
+                            <option value="TN">Tunisia</option>
+                            <option value="TR">Turkey</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="AE">United Arab Emirates</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">USA</option>
+                            <option value="UZ">Uzbekistan</option>
+                            <option value="VN">Vietnam</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="otherPhone">Other phone</label>
-                    <input type="text" class="form-control"
-                           [(ngModel)]="model.otherPhone" id="otherPhone"
-                           ngControl="otherPhone" #otherPhone="ngForm">
-                    <div [hidden]="otherPhone.valid || otherPhone.pristine" class="alert alert-danger">
-                        Other Phone is required
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="pull-right">
+                            <button type="submit" class="btn btn-default">Cancel</button>
+                            <button type="submit" class="btn btn-primary" [disabled]="!patientForm.valid">Save</button>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="addressLine1">Address Line1</label>
-                    <input type="text" class="form-control" required
-                           [(ngModel)]="model.addressLine1" id="addressLine1"
-                           ngControl="addressLine1" #addressLine1="ngForm">
-                    <div [hidden]="addressLine1.valid || addressLine1.pristine" class="alert alert-danger">
-                        Address Line1 is required
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="addressLine2">Address Line2</label>
-                    <input type="text" class="form-control"
-                           [(ngModel)]="model.addressLine2" id="addressLine2"
-                           ngControl="addressLine2" #addressLine2="ngForm">
-                    <div [hidden]="addressLine2.valid || addressLine2.pristine" class="alert alert-danger">
-                        Address Line2 is required
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="addressLine3">Address Line3</label>
-                    <input type="text" class="form-control"
-                           [(ngModel)]="model.addressLine3" id="addressLine3"
-                           ngControl="addressLine3" #addressLine3="ngForm">
-                    <div [hidden]="addressLine3.valid || addressLine3.pristine" class="alert alert-danger">
-                        Address Line3 is required
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="addressLine4">Address Line4</label>
-                    <input type="text" class="form-control" required
-                           [(ngModel)]="model.addressLine4" id="addressLine4"
-                           ngControl="addressLine4" #addressLine4="ngForm">
-                    <div [hidden]="addressLine4.valid || addressLine4.pristine" class="alert alert-danger">
-                        Address Line4 is required
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="city">City</label>
-                    <input type="text" class="form-control" required
-                           [(ngModel)]="model.city" id="city"
-                           ngControl="city" #city="ngForm">
-                    <div [hidden]="city.valid || city.pristine" class="alert alert-danger">
-                        City is required
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="state">State</label>
-                    <input type="text" class="form-control"
-                           [(ngModel)]="model.state" id="state"
-                           ngControl="state" #state="ngForm">
-                    <div [hidden]="state.valid || state.pristine" class="alert alert-danger">
-                        State is required
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="state">Zip</label>
-                    <input type="text" class="form-control"
-                           [(ngModel)]="model.zip" id="zip"
-                           ngControl="zip" #zip="ngForm">
-                    <div [hidden]="zip.valid || zip.pristine" class="alert alert-danger">
-                        Zip is required
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="occupation">Occupation</label>
-                    <input type="text" class="form-control"
-                           [(ngModel)]="model.occupation" id="occupation"
-                           ngControl="occupation" #occupation="ngForm">
-                    <div [hidden]="occupation.valid || occupation.pristine" class="alert alert-danger">
-                        Occupation is required
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="ssn">National ID</label>
-                    <input type="text" class="form-control"
-                           [(ngModel)]="model.ssn" id="ssn"
-                           ngControl="ssn" #ssn="ngForm">
-                    <div [hidden]="ssn.valid || ssn.pristine" class="alert alert-danger">
-                        National Id is required
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="imageUrl">Image URL</label>
-                    <input type="text" class="form-control"
-                           [(ngModel)]="model.imageUrl" id="imageUrl"
-                           ngControl="imageUrl" #imageUrl="ngForm">
-                    <div [hidden]="imageUrl.valid || imageUrl.pristine" class="alert alert-danger">
-                        Image URL is required
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-default" [disabled]="!heroForm.form.valid">Submit</button>
-                <button type="button" class="btn btn-default" (click)="newHero()">New Hero</button>
-            </form>
-        </div>
-        <div [hidden]="!submitted">
-            <h2>You submitted the following:</h2>
-            <div class="row">
-                <div class="col-xs-3">Name</div>
-                <div class="col-xs-9  pull-left">{{ model.name }}</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-3">Alter Ego</div>
-                <div class="col-xs-9 pull-left">{{ model.alterEgo }}</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-3">Power</div>
-                <div class="col-xs-9 pull-left">{{ model.power }}</div>
-            </div>
-            <br>
-            <button class="btn btn-default" (click)="submitted=false">Edit</button>
-        </div>
-    </div>
-</div>
+            </fieldset>
+        </form>
+    </div><!-- /.col-lg-12 -->
+</div><!-- /.row -->

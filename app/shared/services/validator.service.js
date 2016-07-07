@@ -11,7 +11,8 @@ var ValidationService = (function () {
             'invalidCreditCard': 'Is invalid credit card number',
             'invalidEmailAddress': 'Invalid email address',
             'invalidPassword': 'Invalid password. Password must be at least 6 characters long, and contain a number.',
-            'minlength': "Minimum length " + validatorValue.requiredLength
+            'minlength': "Minimum length " + validatorValue.requiredLength,
+            'invalidName': "Invalid Name"
         };
         return config[validatorName];
     };
@@ -41,6 +42,14 @@ var ValidationService = (function () {
         }
         else {
             return { 'invalidPassword': true };
+        }
+    };
+    ValidationService.nameValidator = function (control) {
+        if (control.value.match(/^([A-Z][a-z]*([ ][a-z]+)*([ '-]([&][ ])?[A-Z][a-z]+)*)$/)) {
+            return null;
+        }
+        else {
+            return { 'invalidName': true };
         }
     };
     return ValidationService;

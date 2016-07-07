@@ -12,15 +12,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by NetSri on 01/07/2016.
  */
 var core_1 = require('@angular/core');
+var common_1 = require('@angular/common');
 var LoginComponent = (function () {
-    function LoginComponent() {
+    function LoginComponent(fb) {
+        this.loginForm = fb.group({
+            email: ["", common_1.Validators.required],
+            password: ["", common_1.Validators.required]
+        });
     }
+    LoginComponent.prototype.doLogin = function (event) {
+        if (this.loginForm.dirty && this.loginForm.valid) {
+            //console.log(this.loginForm.value);
+            alert("Password: " + this.loginForm.value.password + " Email: " + this.loginForm.value.email);
+        }
+        event.preventDefault();
+    };
     LoginComponent = __decorate([
         core_1.Component({
             selector: 'my-app-login',
             templateUrl: './app/login/login.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [common_1.FormBuilder])
     ], LoginComponent);
     return LoginComponent;
 }());

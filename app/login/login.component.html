@@ -1,1 +1,5 @@
-<h1>I am just a place holder</h1>
+<form [ngFormModel]="loginForm" (submit)="doLogin($event)">
+    <input ngControl="email"   type="email" placeholder="Your email" class="form-control">
+    <input ngControl="password"   type="password" placeholder="Your password" class="form-control">
+    <button type="submit" class="btn btn-primary">Log in</button>
+</form>

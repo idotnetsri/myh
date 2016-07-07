@@ -9,30 +9,49 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var INewPatient_1 = require('../shared/interfaces/INewPatient');
+var common_1 = require('@angular/common');
+var patient_new_1 = require('./patient-new');
 var NewPatientComponent = (function () {
-    function NewPatientComponent() {
-        this.model = new INewPatient_1.NewPatient();
-        this.submitted = false;
-        // Reset the form with a new hero AND restore 'pristine' class state
-        // by toggling 'active' flag which causes the form
-        // to be removed/re-added in a tick via NgIf
-        // TODO: Workaround until NgForm has a reset method (#6822)
-        this.active = true;
+    function NewPatientComponent(fb) {
+        this.fb = fb;
+        this.model = new patient_new_1.NewPatient('', '', 0, 0, '', '', '', '', '', '', '', '', '', '', '');
+        this.infoActive = false;
+        this.patientForm = fb.group({
+            firstName: ["", common_1.Validators.required],
+            lastName: ["", common_1.Validators.required],
+            gender: [0, common_1.Validators.required],
+            age: ["", common_1.Validators.required],
+            dateOfBirth: ["", common_1.Validators.required],
+            mobile: ["", common_1.Validators.required],
+            otherPhone: ["", common_1.Validators.maxLength(15)],
+            addressLine1: ["", common_1.Validators.required],
+            addressLine2: [""],
+            city: [""],
+            ssn: [""],
+            state: [""],
+            zip: [""],
+            occupation: [""],
+            imageUrl: [""],
+            countryCode: ["", common_1.Validators.required],
+        });
     }
-    NewPatientComponent.prototype.onSubmit = function () { this.submitted = true; };
-    NewPatientComponent.prototype.newHero = function () {
-        var _this = this;
-        this.model = new INewPatient_1.NewPatient('', '', 0, 0, '', '', '', '');
-        this.active = false;
-        setTimeout(function () { return _this.active = true; }, 0);
+    NewPatientComponent.prototype.doReg = function (event) {
+        console.log(this.model);
+        if (this.patientForm.dirty && this.patientForm.valid) {
+            console.log(this.patientForm.value);
+        }
+        event.preventDefault();
+    };
+    NewPatientComponent.prototype.clickedInfo = function (event) {
+        event.preventDefault();
+        this.infoActive = !this.infoActive;
     };
     NewPatientComponent = __decorate([
         core_1.Component({
             selector: 'my-app-patient-new',
             templateUrl: './app/+patient/patient-new.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [common_1.FormBuilder])
     ], NewPatientComponent);
     return NewPatientComponent;
 }());
